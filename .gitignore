@@ -1,0 +1,12 @@
+# Ignore Python cache files
+__pycache__/
+
+# Ignore virtual environment folder
+mlopsenv/
+
+# Ignore MLflow database and artifacts
+mlruns/
+mlflow.db
+
+# Ignore any generated models
+models/

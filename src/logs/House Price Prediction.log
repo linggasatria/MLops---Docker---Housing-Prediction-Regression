@@ -1,0 +1,558 @@
+2025-08-14 00:00:17 | House Price Prediction | INFO | Loading configuration from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\config\config.yaml
+2025-08-14 00:00:17 | House Price Prediction | INFO | Configuration loaded successfully
+2025-08-14 00:01:10 | House Price Prediction | INFO | Loading configuration from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\config\config.yaml
+2025-08-14 00:01:10 | House Price Prediction | INFO | Configuration loaded successfully
+2025-08-14 00:02:34 | House Price Prediction | INFO | Loading configuration from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\config\config.yaml
+2025-08-14 00:02:34 | House Price Prediction | INFO | Configuration loaded successfully
+2025-08-14 00:02:34 | House Price Prediction | WARNING | Could not delete mlflow.db. It might be in use by another process. Proceeding anyway.
+2025-08-14 00:02:34 | House Price Prediction | INFO | Starting pipeline execution
+2025-08-14 00:02:35 | House Price Prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-08-14 00:02:35 | House Price Prediction | INFO | Experiment name: House Price Prediction
+2025-08-14 00:02:35 | House Price Prediction | INFO | Step 1: Loading data
+2025-08-14 00:02:35 | House Price Prediction | INFO | Initialized DataLoader with path: C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:02:35 | House Price Prediction | INFO | Loading data from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:02:35 | House Price Prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-08-14 00:02:35 | House Price Prediction | INFO | Validating data
+2025-08-14 00:02:35 | House Price Prediction | WARNING | Found null values:
+LotFrontage      259
+Alley           1369
+MasVnrType       872
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-08-14 00:02:35 | House Price Prediction | INFO | Data validation completed
+2025-08-14 00:02:35 | House Price Prediction | INFO | Splitting features and target
+2025-08-14 00:02:35 | House Price Prediction | INFO | Split completed. Features shape: (1460, 80), Target shape: (1460,)
+2025-08-14 00:02:35 | House Price Prediction | INFO | Data loaded and split into training and testing sets
+2025-08-14 00:02:35 | House Price Prediction | INFO | Step 2: Preprocessing data
+2025-08-14 00:02:35 | House Price Prediction | INFO | Initialized DataProcessor
+2025-08-14 00:02:35 | House Price Prediction | INFO | Starting fit_transform process
+2025-08-14 00:02:35 | House Price Prediction | INFO | Fit_transform completed successfully
+2025-08-14 00:02:35 | House Price Prediction | INFO | Starting transform process
+2025-08-14 00:02:35 | House Price Prediction | INFO | Transform completed successfully
+2025-08-14 00:02:35 | House Price Prediction | ERROR | Pipeline execution failed: 'DataProcessor' object has no attribute 'save_preprocessor'
+2025-08-14 00:04:44 | House Price Prediction | INFO | Loading configuration from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\config\config.yaml
+2025-08-14 00:04:44 | House Price Prediction | INFO | Configuration loaded successfully
+2025-08-14 00:04:44 | House Price Prediction | WARNING | Could not delete mlflow.db. It might be in use by another process. Proceeding anyway.
+2025-08-14 00:04:44 | House Price Prediction | INFO | Starting pipeline execution
+2025-08-14 00:04:45 | House Price Prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-08-14 00:04:45 | House Price Prediction | INFO | Experiment name: House Price Prediction
+2025-08-14 00:04:45 | House Price Prediction | INFO | Step 1: Loading data
+2025-08-14 00:04:45 | House Price Prediction | INFO | Initialized DataLoader with path: C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:04:45 | House Price Prediction | INFO | Loading data from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:04:45 | House Price Prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-08-14 00:04:45 | House Price Prediction | INFO | Validating data
+2025-08-14 00:04:45 | House Price Prediction | WARNING | Found null values:
+LotFrontage      259
+Alley           1369
+MasVnrType       872
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-08-14 00:04:45 | House Price Prediction | INFO | Data validation completed
+2025-08-14 00:04:45 | House Price Prediction | INFO | Splitting features and target
+2025-08-14 00:04:45 | House Price Prediction | INFO | Split completed. Features shape: (1460, 80), Target shape: (1460,)
+2025-08-14 00:04:45 | House Price Prediction | INFO | Data loaded and split into training and testing sets
+2025-08-14 00:04:45 | House Price Prediction | INFO | Step 2: Preprocessing data
+2025-08-14 00:04:45 | House Price Prediction | INFO | Initialized DataProcessor
+2025-08-14 00:04:45 | House Price Prediction | INFO | Starting fit_transform process
+2025-08-14 00:04:45 | House Price Prediction | INFO | Fit_transform completed successfully
+2025-08-14 00:04:45 | House Price Prediction | INFO | Starting transform process
+2025-08-14 00:04:46 | House Price Prediction | INFO | Transform completed successfully
+2025-08-14 00:04:46 | House Price Prediction | ERROR | Pipeline execution failed: 'DataProcessor' object has no attribute 'save_preprocessor'
+2025-08-14 00:20:51 | House Price Prediction | INFO | Loading configuration from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\config\config.yaml
+2025-08-14 00:20:51 | House Price Prediction | INFO | Configuration loaded successfully
+2025-08-14 00:20:51 | House Price Prediction | INFO | Deleted existing MLflow database
+2025-08-14 00:20:51 | House Price Prediction | INFO | Starting pipeline execution
+2025-08-14 00:20:53 | House Price Prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-08-14 00:20:53 | House Price Prediction | INFO | Experiment name: House Price Prediction
+2025-08-14 00:20:53 | House Price Prediction | INFO | Step 1: Loading data
+2025-08-14 00:20:53 | House Price Prediction | INFO | Initialized DataLoader with path: C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:20:53 | House Price Prediction | INFO | Loading data from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:20:53 | House Price Prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-08-14 00:20:53 | House Price Prediction | INFO | Validating data
+2025-08-14 00:20:53 | House Price Prediction | WARNING | Found null values:
+LotFrontage      259
+Alley           1369
+MasVnrType       872
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-08-14 00:20:53 | House Price Prediction | INFO | Data validation completed
+2025-08-14 00:20:53 | House Price Prediction | INFO | Splitting features and target
+2025-08-14 00:20:53 | House Price Prediction | INFO | Split completed. Features shape: (1460, 80), Target shape: (1460,)
+2025-08-14 00:20:53 | House Price Prediction | INFO | Data loaded and split into training and testing sets
+2025-08-14 00:20:53 | House Price Prediction | INFO | Step 2: Preprocessing data
+2025-08-14 00:20:53 | House Price Prediction | INFO | Initialized DataProcessor
+2025-08-14 00:20:53 | House Price Prediction | INFO | Starting fit_transform process
+2025-08-14 00:20:54 | House Price Prediction | INFO | Fit_transform completed successfully
+2025-08-14 00:20:54 | House Price Prediction | INFO | Starting transform process
+2025-08-14 00:20:54 | House Price Prediction | INFO | Transform completed successfully
+2025-08-14 00:20:54 | House Price Prediction | ERROR | Pipeline execution failed: 'DataProcessor' object has no attribute 'save_preprocessor'
+2025-08-14 00:25:46 | House Price Prediction | INFO | Loading configuration from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\config\config.yaml
+2025-08-14 00:25:46 | House Price Prediction | INFO | Configuration loaded successfully
+2025-08-14 00:25:46 | House Price Prediction | INFO | Deleted existing MLflow database
+2025-08-14 00:25:46 | House Price Prediction | INFO | Starting pipeline execution
+2025-08-14 00:25:48 | House Price Prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-08-14 00:25:48 | House Price Prediction | INFO | Experiment name: House Price Prediction
+2025-08-14 00:25:48 | House Price Prediction | INFO | Step 1: Loading data
+2025-08-14 00:25:48 | House Price Prediction | INFO | Initialized DataLoader with path: C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:25:48 | House Price Prediction | INFO | Loading data from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:25:48 | House Price Prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-08-14 00:25:48 | House Price Prediction | INFO | Validating data
+2025-08-14 00:25:48 | House Price Prediction | WARNING | Found null values:
+LotFrontage      259
+Alley           1369
+MasVnrType       872
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-08-14 00:25:48 | House Price Prediction | INFO | Data validation completed
+2025-08-14 00:25:48 | House Price Prediction | INFO | Splitting features and target
+2025-08-14 00:25:48 | House Price Prediction | INFO | Split completed. Features shape: (1460, 80), Target shape: (1460,)
+2025-08-14 00:25:48 | House Price Prediction | INFO | Data loaded and split into training and testing sets
+2025-08-14 00:25:48 | House Price Prediction | INFO | Step 2: Preprocessing data
+2025-08-14 00:25:48 | House Price Prediction | INFO | Initialized DataProcessor
+2025-08-14 00:25:48 | House Price Prediction | ERROR | Pipeline execution failed: 'DataProcessor' object has no attribute 'fit'
+2025-08-14 00:29:14 | House Price Prediction | INFO | Loading configuration from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\config\config.yaml
+2025-08-14 00:29:14 | House Price Prediction | INFO | Configuration loaded successfully
+2025-08-14 00:29:15 | House Price Prediction | INFO | Deleted existing MLflow database
+2025-08-14 00:29:15 | House Price Prediction | INFO | Starting pipeline execution
+2025-08-14 00:29:16 | House Price Prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-08-14 00:29:16 | House Price Prediction | INFO | Experiment name: House Price Prediction
+2025-08-14 00:29:17 | House Price Prediction | INFO | Step 1: Loading data
+2025-08-14 00:29:17 | House Price Prediction | INFO | Initialized DataLoader with path: C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:29:17 | House Price Prediction | INFO | Loading data from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:29:17 | House Price Prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-08-14 00:29:17 | House Price Prediction | INFO | Validating data
+2025-08-14 00:29:17 | House Price Prediction | WARNING | Found null values:
+LotFrontage      259
+Alley           1369
+MasVnrType       872
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-08-14 00:29:17 | House Price Prediction | INFO | Data validation completed
+2025-08-14 00:29:17 | House Price Prediction | INFO | Splitting features and target
+2025-08-14 00:29:17 | House Price Prediction | INFO | Split completed. Features shape: (1460, 80), Target shape: (1460,)
+2025-08-14 00:29:17 | House Price Prediction | INFO | Data loaded and split into training and testing sets
+2025-08-14 00:29:17 | House Price Prediction | INFO | Step 2: Preprocessing data
+2025-08-14 00:29:17 | House Price Prediction | INFO | Initialized DataProcessor
+2025-08-14 00:29:17 | House Price Prediction | INFO | Starting fit process
+2025-08-14 00:29:17 | House Price Prediction | INFO | Fit process completed successfully
+2025-08-14 00:29:17 | House Price Prediction | INFO | Starting transform process
+2025-08-14 00:29:17 | House Price Prediction | INFO | Transform completed successfully
+2025-08-14 00:29:17 | House Price Prediction | INFO | Starting transform process
+2025-08-14 00:29:17 | House Price Prediction | INFO | Transform completed successfully
+2025-08-14 00:29:17 | House Price Prediction | INFO | Saving preprocessor to models/preprocessing
+2025-08-14 00:29:17 | House Price Prediction | INFO | Preprocessors saved successfully
+2025-08-14 00:29:17 | House Price Prediction | INFO | Preprocessor fitted, data transformed, and preprocessor saved successfully.
+2025-08-14 00:29:17 | House Price Prediction | INFO | Step 3: Training and evaluating models
+2025-08-14 00:29:17 | House Price Prediction | INFO | MLflow setup completed successfully
+2025-08-14 00:29:17 | House Price Prediction | INFO | Initialized ModelTrainer with experiment: House Price Prediction
+2025-08-14 00:29:17 | House Price Prediction | ERROR | Pipeline execution failed: ModelTrainer.train_all_models() missing 1 required positional argument: 'preprocessor'
+2025-08-14 00:31:01 | House Price Prediction | INFO | Loading configuration from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\config\config.yaml
+2025-08-14 00:31:01 | House Price Prediction | INFO | Configuration loaded successfully
+2025-08-14 00:31:02 | House Price Prediction | INFO | Deleted existing MLflow database
+2025-08-14 00:31:02 | House Price Prediction | INFO | Starting pipeline execution
+2025-08-14 00:31:04 | House Price Prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-08-14 00:31:04 | House Price Prediction | INFO | Experiment name: House Price Prediction
+2025-08-14 00:31:04 | House Price Prediction | INFO | Step 1: Loading data
+2025-08-14 00:31:04 | House Price Prediction | INFO | Initialized DataLoader with path: C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:31:04 | House Price Prediction | INFO | Loading data from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:31:04 | House Price Prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-08-14 00:31:04 | House Price Prediction | INFO | Validating data
+2025-08-14 00:31:04 | House Price Prediction | WARNING | Found null values:
+LotFrontage      259
+Alley           1369
+MasVnrType       872
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-08-14 00:31:04 | House Price Prediction | INFO | Data validation completed
+2025-08-14 00:31:04 | House Price Prediction | INFO | Splitting features and target
+2025-08-14 00:31:04 | House Price Prediction | INFO | Split completed. Features shape: (1460, 80), Target shape: (1460,)
+2025-08-14 00:31:04 | House Price Prediction | INFO | Data loaded and split into training and testing sets
+2025-08-14 00:31:04 | House Price Prediction | INFO | Step 2: Preprocessing data
+2025-08-14 00:31:04 | House Price Prediction | INFO | Initialized DataProcessor
+2025-08-14 00:31:04 | House Price Prediction | INFO | Starting fit process
+2025-08-14 00:31:04 | House Price Prediction | INFO | Fit process completed successfully
+2025-08-14 00:31:04 | House Price Prediction | INFO | Starting transform process
+2025-08-14 00:31:04 | House Price Prediction | INFO | Transform completed successfully
+2025-08-14 00:31:04 | House Price Prediction | INFO | Starting transform process
+2025-08-14 00:31:04 | House Price Prediction | INFO | Transform completed successfully
+2025-08-14 00:31:04 | House Price Prediction | INFO | Saving preprocessor to models/preprocessing
+2025-08-14 00:31:04 | House Price Prediction | INFO | Preprocessors saved successfully
+2025-08-14 00:31:04 | House Price Prediction | INFO | Preprocessor fitted, data transformed, and preprocessor saved successfully.
+2025-08-14 00:31:04 | House Price Prediction | INFO | Step 3: Training and evaluating models
+2025-08-14 00:31:04 | House Price Prediction | INFO | Initialized ModelTrainer with experiment: House Price Prediction
+2025-08-14 00:31:04 | House Price Prediction | INFO | Training random_forest model
+2025-08-14 00:31:04 | House Price Prediction | ERROR | Error training random_forest: Input X contains NaN.
+RandomForestRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2025-08-14 00:31:04 | House Price Prediction | INFO | Training gradient_boosting model
+2025-08-14 00:31:04 | House Price Prediction | ERROR | Error training gradient_boosting: Input X contains NaN.
+GradientBoostingRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2025-08-14 00:31:04 | House Price Prediction | ERROR | Pipeline execution failed: No best model selected. Train models first.
+2025-08-14 00:32:39 | House Price Prediction | INFO | Loading configuration from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\config\config.yaml
+2025-08-14 00:32:39 | House Price Prediction | INFO | Configuration loaded successfully
+2025-08-14 00:32:40 | House Price Prediction | INFO | Deleted existing MLflow database
+2025-08-14 00:32:40 | House Price Prediction | INFO | Starting pipeline execution
+2025-08-14 00:32:42 | House Price Prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-08-14 00:32:42 | House Price Prediction | INFO | Experiment name: House Price Prediction
+2025-08-14 00:32:42 | House Price Prediction | INFO | Step 1: Loading data
+2025-08-14 00:32:42 | House Price Prediction | INFO | Initialized DataLoader with path: C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:32:42 | House Price Prediction | INFO | Loading data from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:32:42 | House Price Prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-08-14 00:32:42 | House Price Prediction | INFO | Validating data
+2025-08-14 00:32:42 | House Price Prediction | WARNING | Found null values:
+LotFrontage      259
+Alley           1369
+MasVnrType       872
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-08-14 00:32:42 | House Price Prediction | INFO | Data validation completed
+2025-08-14 00:32:42 | House Price Prediction | INFO | Splitting features and target
+2025-08-14 00:32:42 | House Price Prediction | INFO | Split completed. Features shape: (1460, 80), Target shape: (1460,)
+2025-08-14 00:32:42 | House Price Prediction | INFO | Data loaded and split into training and testing sets
+2025-08-14 00:32:42 | House Price Prediction | INFO | Step 2: Preprocessing data
+2025-08-14 00:32:42 | House Price Prediction | INFO | Initialized DataProcessor
+2025-08-14 00:32:42 | House Price Prediction | INFO | Starting fit process
+2025-08-14 00:32:42 | House Price Prediction | INFO | Fit process completed successfully
+2025-08-14 00:32:42 | House Price Prediction | INFO | Starting transform process
+2025-08-14 00:32:42 | House Price Prediction | INFO | Transform completed successfully
+2025-08-14 00:32:42 | House Price Prediction | INFO | Starting transform process
+2025-08-14 00:32:42 | House Price Prediction | INFO | Transform completed successfully
+2025-08-14 00:32:42 | House Price Prediction | INFO | Saving preprocessor to models/preprocessing
+2025-08-14 00:32:42 | House Price Prediction | INFO | Preprocessors saved successfully
+2025-08-14 00:32:42 | House Price Prediction | INFO | Preprocessor fitted, data transformed, and preprocessor saved successfully.
+2025-08-14 00:32:42 | House Price Prediction | INFO | Step 3: Training and evaluating models
+2025-08-14 00:32:42 | House Price Prediction | INFO | Initialized ModelTrainer with experiment: House Price Prediction
+2025-08-14 00:32:42 | House Price Prediction | INFO | Training random_forest model
+2025-08-14 00:33:08 | House Price Prediction | INFO | random_forest training completed. Metrics: {'rmse': np.float64(28473.995556499372), 'mae': 17511.474560003306, 'r2_score': 0.8942980518622724}
+2025-08-14 00:33:08 | House Price Prediction | INFO | Training gradient_boosting model
+2025-08-14 00:33:18 | House Price Prediction | INFO | gradient_boosting training completed. Metrics: {'rmse': np.float64(25512.577297326316), 'mae': 15801.542575524156, 'r2_score': 0.9151416011822076}
+2025-08-14 00:33:18 | House Price Prediction | ERROR | Error selecting best model: Unable to find a logged_model with artifact_path model under run 81d00cfb241d4d94ac55228326f4e6a6
+2025-08-14 00:33:18 | House Price Prediction | ERROR | Pipeline execution failed: Unable to find a logged_model with artifact_path model under run 81d00cfb241d4d94ac55228326f4e6a6
+2025-08-14 00:35:05 | House Price Prediction | INFO | Loading configuration from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\config\config.yaml
+2025-08-14 00:35:05 | House Price Prediction | INFO | Configuration loaded successfully
+2025-08-14 00:35:05 | House Price Prediction | INFO | Deleted existing MLflow database
+2025-08-14 00:35:05 | House Price Prediction | INFO | Starting pipeline execution
+2025-08-14 00:35:07 | House Price Prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-08-14 00:35:07 | House Price Prediction | INFO | Experiment name: House Price Prediction
+2025-08-14 00:35:07 | House Price Prediction | INFO | Step 1: Loading data
+2025-08-14 00:35:07 | House Price Prediction | INFO | Initialized DataLoader with path: C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:35:07 | House Price Prediction | INFO | Loading data from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:35:07 | House Price Prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-08-14 00:35:07 | House Price Prediction | INFO | Validating data
+2025-08-14 00:35:07 | House Price Prediction | WARNING | Found null values:
+LotFrontage      259
+Alley           1369
+MasVnrType       872
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-08-14 00:35:07 | House Price Prediction | INFO | Data validation completed
+2025-08-14 00:35:07 | House Price Prediction | INFO | Splitting features and target
+2025-08-14 00:35:07 | House Price Prediction | INFO | Split completed. Features shape: (1460, 80), Target shape: (1460,)
+2025-08-14 00:35:07 | House Price Prediction | INFO | Data loaded and split into training and testing sets
+2025-08-14 00:35:07 | House Price Prediction | INFO | Step 2: Preprocessing data
+2025-08-14 00:35:07 | House Price Prediction | INFO | Initialized DataProcessor
+2025-08-14 00:35:07 | House Price Prediction | INFO | Starting fit process
+2025-08-14 00:35:08 | House Price Prediction | INFO | Fit process completed successfully
+2025-08-14 00:35:08 | House Price Prediction | INFO | Starting transform process
+2025-08-14 00:35:08 | House Price Prediction | INFO | Transform completed successfully
+2025-08-14 00:35:08 | House Price Prediction | INFO | Starting transform process
+2025-08-14 00:35:08 | House Price Prediction | INFO | Transform completed successfully
+2025-08-14 00:35:08 | House Price Prediction | INFO | Saving preprocessor to models/preprocessing
+2025-08-14 00:35:08 | House Price Prediction | INFO | Preprocessors saved successfully
+2025-08-14 00:35:08 | House Price Prediction | INFO | Preprocessor fitted, data transformed, and preprocessor saved successfully.
+2025-08-14 00:35:08 | House Price Prediction | INFO | Step 3: Training and evaluating models
+2025-08-14 00:35:08 | House Price Prediction | INFO | Initialized ModelTrainer with experiment: House Price Prediction
+2025-08-14 00:35:08 | House Price Prediction | INFO | Training random_forest model
+2025-08-14 00:35:32 | House Price Prediction | INFO | random_forest training completed. Metrics: {'rmse': np.float64(28473.995556499372), 'mae': 17511.474560003306, 'r2_score': 0.8942980518622724}
+2025-08-14 00:35:32 | House Price Prediction | INFO | Training gradient_boosting model
+2025-08-14 00:35:41 | House Price Prediction | INFO | gradient_boosting training completed. Metrics: {'rmse': np.float64(25512.577297326316), 'mae': 15801.542575524156, 'r2_score': 0.9151416011822076}
+2025-08-14 00:35:41 | House Price Prediction | INFO | Selected gradient_boosting as best model
+2025-08-14 00:35:41 | House Price Prediction | INFO | Best model metrics: {'rmse': np.float64(25512.577297326316), 'mae': 15801.542575524156, 'r2_score': 0.9151416011822076}
+2025-08-14 00:35:41 | House Price Prediction | INFO | Pipeline execution completed successfully
+2025-08-14 00:47:34 | House Price Prediction | INFO | Loading configuration from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\config\config.yaml
+2025-08-14 00:47:34 | House Price Prediction | INFO | Configuration loaded successfully
+2025-08-14 00:47:34 | House Price Prediction | INFO | Deleted existing MLflow database
+2025-08-14 00:47:34 | House Price Prediction | INFO | Starting pipeline execution
+2025-08-14 00:47:36 | House Price Prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-08-14 00:47:36 | House Price Prediction | INFO | Experiment name: House Price Prediction
+2025-08-14 00:47:36 | House Price Prediction | INFO | Step 1: Loading data
+2025-08-14 00:47:36 | House Price Prediction | INFO | Initialized DataLoader with path: C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:47:36 | House Price Prediction | INFO | Loading data from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:47:36 | House Price Prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-08-14 00:47:36 | House Price Prediction | INFO | Validating data
+2025-08-14 00:47:36 | House Price Prediction | WARNING | Found null values:
+LotFrontage      259
+Alley           1369
+MasVnrType       872
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-08-14 00:47:36 | House Price Prediction | INFO | Data validation completed
+2025-08-14 00:47:36 | House Price Prediction | INFO | Splitting features and target
+2025-08-14 00:47:36 | House Price Prediction | INFO | Split completed. Features shape: (1460, 80), Target shape: (1460,)
+2025-08-14 00:47:36 | House Price Prediction | INFO | Data loaded and split into training and testing sets
+2025-08-14 00:47:36 | House Price Prediction | INFO | Step 2: Preprocessing data
+2025-08-14 00:47:36 | House Price Prediction | INFO | Initialized DataProcessor
+2025-08-14 00:47:36 | House Price Prediction | INFO | Starting fit process
+2025-08-14 00:47:36 | House Price Prediction | INFO | Fit process completed successfully
+2025-08-14 00:47:36 | House Price Prediction | INFO | Starting transform process
+2025-08-14 00:47:36 | House Price Prediction | INFO | Transform completed successfully
+2025-08-14 00:47:36 | House Price Prediction | INFO | Starting transform process
+2025-08-14 00:47:36 | House Price Prediction | INFO | Transform completed successfully
+2025-08-14 00:47:36 | House Price Prediction | INFO | Saving preprocessor to models/preprocessing
+2025-08-14 00:47:36 | House Price Prediction | INFO | Preprocessors saved successfully
+2025-08-14 00:47:36 | House Price Prediction | INFO | Preprocessor fitted, data transformed, and preprocessor saved successfully.
+2025-08-14 00:47:36 | House Price Prediction | INFO | Step 3: Training and evaluating models
+2025-08-14 00:47:36 | House Price Prediction | INFO | Initialized ModelTrainer with experiment: House Price Prediction
+2025-08-14 00:47:36 | House Price Prediction | INFO | Training random_forest model
+2025-08-14 00:48:02 | House Price Prediction | INFO | random_forest training completed. Metrics: {'rmse': np.float64(28473.995556499372), 'mae': 17511.474560003306, 'r2_score': 0.8942980518622724}
+2025-08-14 00:48:02 | House Price Prediction | INFO | Training gradient_boosting model
+2025-08-14 00:48:12 | House Price Prediction | INFO | gradient_boosting training completed. Metrics: {'rmse': np.float64(25512.577297326316), 'mae': 15801.542575524156, 'r2_score': 0.9151416011822076}
+2025-08-14 00:48:12 | House Price Prediction | INFO | Selected gradient_boosting as best model
+2025-08-14 00:48:12 | House Price Prediction | INFO | Best model metrics: {'rmse': np.float64(25512.577297326316), 'mae': 15801.542575524156, 'r2_score': 0.9151416011822076}
+2025-08-14 00:48:12 | House Price Prediction | INFO | Pipeline execution completed successfully
+2025-08-14 00:50:09 | House Price Prediction | INFO | Loading configuration from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\config\config.yaml
+2025-08-14 00:50:09 | House Price Prediction | INFO | Configuration loaded successfully
+2025-08-14 00:50:10 | House Price Prediction | INFO | Deleted existing MLflow database
+2025-08-14 00:50:10 | House Price Prediction | INFO | Starting pipeline execution
+2025-08-14 00:50:12 | House Price Prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-08-14 00:50:12 | House Price Prediction | INFO | Experiment name: House Price Prediction
+2025-08-14 00:50:12 | House Price Prediction | INFO | Step 1: Loading data
+2025-08-14 00:50:12 | House Price Prediction | INFO | Initialized DataLoader with path: C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:50:12 | House Price Prediction | INFO | Loading data from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:50:12 | House Price Prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-08-14 00:50:12 | House Price Prediction | INFO | Validating data
+2025-08-14 00:50:12 | House Price Prediction | WARNING | Found null values:
+LotFrontage      259
+Alley           1369
+MasVnrType       872
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-08-14 00:50:12 | House Price Prediction | INFO | Data validation completed
+2025-08-14 00:50:12 | House Price Prediction | INFO | Splitting features and target
+2025-08-14 00:50:12 | House Price Prediction | INFO | Split completed. Features shape: (1460, 80), Target shape: (1460,)
+2025-08-14 00:50:12 | House Price Prediction | INFO | Data loaded and split into training and testing sets
+2025-08-14 00:50:12 | House Price Prediction | INFO | Step 2: Preprocessing data
+2025-08-14 00:50:12 | House Price Prediction | INFO | Initialized DataProcessor
+2025-08-14 00:50:12 | House Price Prediction | INFO | Starting fit process
+2025-08-14 00:50:12 | House Price Prediction | INFO | Fit process completed successfully
+2025-08-14 00:50:12 | House Price Prediction | INFO | Starting transform process
+2025-08-14 00:50:12 | House Price Prediction | INFO | Transform completed successfully
+2025-08-14 00:50:12 | House Price Prediction | INFO | Starting transform process
+2025-08-14 00:50:12 | House Price Prediction | INFO | Transform completed successfully
+2025-08-14 00:50:12 | House Price Prediction | INFO | Saving preprocessor to models/preprocessing
+2025-08-14 00:50:12 | House Price Prediction | INFO | Preprocessors saved successfully
+2025-08-14 00:50:12 | House Price Prediction | INFO | Preprocessor fitted, data transformed, and preprocessor saved successfully.
+2025-08-14 00:50:12 | House Price Prediction | INFO | Step 3: Training and evaluating models
+2025-08-14 00:50:12 | House Price Prediction | INFO | Initialized ModelTrainer with experiment: House Price Prediction
+2025-08-14 00:50:12 | House Price Prediction | INFO | Training random_forest model
+2025-08-14 00:50:37 | House Price Prediction | INFO | random_forest training completed. Metrics: {'rmse': np.float64(28473.995556499372), 'mae': 17511.474560003306, 'r2_score': 0.8942980518622724}
+2025-08-14 00:50:37 | House Price Prediction | INFO | Training gradient_boosting model
+2025-08-14 00:50:46 | House Price Prediction | INFO | gradient_boosting training completed. Metrics: {'rmse': np.float64(25512.577297326316), 'mae': 15801.542575524156, 'r2_score': 0.9151416011822076}
+2025-08-14 00:50:46 | House Price Prediction | INFO | Selected gradient_boosting as best model
+2025-08-14 00:50:46 | House Price Prediction | INFO | Best model metrics: {'rmse': np.float64(25512.577297326316), 'mae': 15801.542575524156, 'r2_score': 0.9151416011822076}
+2025-08-14 00:50:46 | House Price Prediction | INFO | Pipeline execution completed successfully
+2025-08-14 00:55:45 | House Price Prediction | INFO | Loading configuration from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\config\config.yaml
+2025-08-14 00:55:45 | House Price Prediction | INFO | Configuration loaded successfully
+2025-08-14 00:55:45 | House Price Prediction | INFO | Deleted existing MLflow database
+2025-08-14 00:55:45 | House Price Prediction | INFO | Starting pipeline execution
+2025-08-14 00:55:47 | House Price Prediction | INFO | MLflow setup completed. Tracking URI: sqlite:///mlflow.db
+2025-08-14 00:55:47 | House Price Prediction | INFO | Experiment name: House Price Prediction
+2025-08-14 00:55:48 | House Price Prediction | INFO | Step 1: Loading data
+2025-08-14 00:55:48 | House Price Prediction | INFO | Initialized DataLoader with path: C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:55:48 | House Price Prediction | INFO | Loading data from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:55:48 | House Price Prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-08-14 00:55:48 | House Price Prediction | INFO | Validating data
+2025-08-14 00:55:48 | House Price Prediction | WARNING | Found null values:
+LotFrontage      259
+Alley           1369
+MasVnrType       872
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+2025-08-14 00:55:48 | House Price Prediction | INFO | Data validation completed
+2025-08-14 00:55:48 | House Price Prediction | INFO | Splitting features and target
+2025-08-14 00:55:48 | House Price Prediction | INFO | Split completed. Features shape: (1460, 80), Target shape: (1460,)
+2025-08-14 00:55:48 | House Price Prediction | INFO | Data loaded and split into training and testing sets
+2025-08-14 00:55:48 | House Price Prediction | INFO | Step 2: Preprocessing data
+2025-08-14 00:55:48 | House Price Prediction | INFO | Initialized DataProcessor
+2025-08-14 00:55:48 | House Price Prediction | INFO | Starting fit process
+2025-08-14 00:55:48 | House Price Prediction | INFO | Fit process completed successfully
+2025-08-14 00:55:48 | House Price Prediction | INFO | Starting transform process
+2025-08-14 00:55:48 | House Price Prediction | INFO | Transform completed successfully
+2025-08-14 00:55:48 | House Price Prediction | INFO | Starting transform process
+2025-08-14 00:55:48 | House Price Prediction | INFO | Transform completed successfully
+2025-08-14 00:55:48 | House Price Prediction | INFO | Saving preprocessor to models/preprocessing
+2025-08-14 00:55:48 | House Price Prediction | INFO | Preprocessors saved successfully
+2025-08-14 00:55:48 | House Price Prediction | INFO | Preprocessor fitted, data transformed, and preprocessor saved successfully.
+2025-08-14 00:55:48 | House Price Prediction | INFO | Step 3: Training and evaluating models
+2025-08-14 00:55:48 | House Price Prediction | INFO | Initialized ModelTrainer with experiment: House Price Prediction
+2025-08-14 00:55:48 | House Price Prediction | INFO | Training random_forest model
+2025-08-14 00:56:12 | House Price Prediction | INFO | random_forest training completed. Metrics: {'rmse': np.float64(28473.995556499372), 'mae': 17511.474560003306, 'r2_score': 0.8942980518622724}
+2025-08-14 00:56:12 | House Price Prediction | INFO | Training gradient_boosting model
+2025-08-14 00:56:21 | House Price Prediction | INFO | gradient_boosting training completed. Metrics: {'rmse': np.float64(25512.577297326316), 'mae': 15801.542575524156, 'r2_score': 0.9151416011822076}
+2025-08-14 00:56:21 | House Price Prediction | INFO | Selected gradient_boosting as best model
+2025-08-14 00:56:21 | House Price Prediction | INFO | Best model metrics: {'rmse': np.float64(25512.577297326316), 'mae': 15801.542575524156, 'r2_score': 0.9151416011822076}
+2025-08-14 00:56:21 | House Price Prediction | INFO | Pipeline execution completed successfully

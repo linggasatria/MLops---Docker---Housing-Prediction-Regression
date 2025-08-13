@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  ml-pipeline:
+    # Menggunakan Dockerfile di direktori saat ini untuk membangun image.
+    build: .
+    
+    # Menjalankan perintah yang sama dengan yang ada di Dockerfile,
+    # tetapi ini bisa di-override.
+    command: python src/run_pipeline.py
+    
+    # Menggunakan volumes untuk menyimpan data MLflow dan model di mesin lokal.
+    # Format: <host_path>:<container_path>
+    volumes:
+      # Menyimpan database MLflow di direktori './mlruns' di lokal Anda.
+      - ./mlruns:/app/mlruns
+      # Menyimpan model dan preprocessor di direktori './models' di lokal Anda.
+      - ./models:/app/models
+    
+    # Setel variabel lingkungan untuk MLflow.
+    # Ini memastikan MLflow menyimpan datanya di lokasi yang benar di dalam volume.
+    environment:
+      - MLFLOW_TRACKING_URI=file:///app/mlruns

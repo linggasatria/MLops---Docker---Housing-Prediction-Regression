@@ -1,0 +1,36 @@
+2025-08-02 11:58:32 | telco_churn | INFO | Loading configuration from config\config.yaml
+2025-08-02 11:58:32 | telco_churn | ERROR | Error loading configuration: [Errno 2] No such file or directory: 'config\\config.yaml'
+2025-08-02 11:59:45 | telco_churn | INFO | Loading configuration from config\config.yaml
+2025-08-02 11:59:45 | telco_churn | ERROR | Error loading configuration: [Errno 2] No such file or directory: 'config\\config.yaml'
+2025-08-02 12:01:57 | telco_churn | INFO | Loading configuration from ..\..\config\config.yaml
+2025-08-02 12:01:57 | telco_churn | INFO | Configuration loaded successfully
+2025-08-02 12:01:57 | telco_churn | INFO | inisialisasi class
+2025-08-02 12:01:57 | telco_churn | INFO | Initialized DataLoader with path: artifacts/TelcoCustomerChurn.csv
+2025-08-02 12:01:57 | telco_churn | INFO | Star Download dataset
+2025-08-02 12:01:57 | telco_churn | INFO | Loading data from artifacts/TelcoCustomerChurn.csv
+2025-08-02 12:01:57 | telco_churn | ERROR | Error loading data: [Errno 2] No such file or directory: 'artifacts/TelcoCustomerChurn.csv'
+2025-08-02 12:01:57 | telco_churn | INFO | gagal load data
+2025-08-02 12:04:21 | telco_churn | INFO | Loading configuration from ..\..\config\config.yaml
+2025-08-02 12:04:21 | telco_churn | INFO | Configuration loaded successfully
+2025-08-02 12:04:21 | telco_churn | INFO | inisialisasi class
+2025-08-02 12:04:21 | telco_churn | INFO | Initialized DataLoader with path: C:\Users\acer\Documents\AI ML Bootcamp\MLOps\handson\artifacts\TelcoCustomerChurn.csv
+2025-08-02 12:04:21 | telco_churn | INFO | Star Download dataset
+2025-08-02 12:04:21 | telco_churn | INFO | Loading data from C:\Users\acer\Documents\AI ML Bootcamp\MLOps\handson\artifacts\TelcoCustomerChurn.csv
+2025-08-02 12:04:21 | telco_churn | INFO | Data loaded successfully with shape (7043, 21)
+2025-08-02 12:04:21 | telco_churn | INFO | Data loaded
+2025-08-02 12:09:14 | telco_churn | INFO | Loading configuration from ..\..\config\config.yaml
+2025-08-02 12:09:14 | telco_churn | INFO | Configuration loaded successfully
+2025-08-02 12:09:14 | telco_churn | INFO | inisialisasi class
+2025-08-02 12:09:14 | telco_churn | INFO | Initialized DataLoader with path: C:\Users\acer\Documents\AI ML Bootcamp\MLOps\handson\artifacts\TelcoCustomerChurn.csv
+2025-08-02 12:09:14 | telco_churn | INFO | Star Download dataset
+2025-08-02 12:09:14 | telco_churn | INFO | Loading data from C:\Users\acer\Documents\AI ML Bootcamp\MLOps\handson\artifacts\TelcoCustomerChurn.csv
+2025-08-02 12:09:14 | telco_churn | INFO | Data loaded successfully with shape (7043, 21)
+2025-08-02 12:09:14 | telco_churn | INFO | Data loaded
+2025-08-02 12:53:09 | telco_churn | INFO | Loading configuration from ..\..\config\config.yaml
+2025-08-02 12:53:09 | telco_churn | INFO | Configuration loaded successfully
+2025-08-02 12:53:09 | telco_churn | INFO | inisialisasi class
+2025-08-02 12:53:09 | telco_churn | INFO | Initialized DataLoader with path: C:\Users\acer\Documents\AI ML Bootcamp\MLOps\handson\artifacts\TelcoCustomerChurn.csv
+2025-08-02 12:53:09 | telco_churn | INFO | Star Download dataset
+2025-08-02 12:53:09 | telco_churn | INFO | Loading data from C:\Users\acer\Documents\AI ML Bootcamp\MLOps\handson\artifacts\TelcoCustomerChurn.csv
+2025-08-02 12:53:09 | telco_churn | INFO | Data loaded successfully with shape (7043, 21)
+2025-08-02 12:53:09 | telco_churn | INFO | Data loaded

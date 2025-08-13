@@ -1,0 +1,22 @@
+1. setting virtual env dan flow code :
+a. setelah buka terminal, pilih cmd kemudian masuk ke path folder anda lalu ketik
+python -m venv mlops
+lalu aktifkan env, windows -> mlops\Scripts\activate
+MacBook -> source mlops/bin/activate
+kemudian lakukan pip install -r requirements.txt
+
+b. Cara baca struktur code :
+- mulai dari folder notebooks -> research.ipynb
+- baca folder src -> Bahas data loader lalu bagian logger untuk membuat log history dengan cara membuat file test_logger.py di folder handson
+- kemudian bahas data_loader.py dibagian ini bahas terkait dengan path -> nyambungnya dengan membuat config.py di utils dan config.yaml di folder config. Pada data_loader.py -> bahas juga function validasi data.
+- coba lakukan data_preprocessor.py -> lalu test.py
+- Lalu bahas bagian models -> trainer.py lalu ke model.py
+- running pipelinenya : (mlops) C:\Users\acer\Documents\AI ML Bootcamp\MLOps\handson>python src/run_pipeline.py
+- lalu test jalankan mlflow.db dengan cara : mlflow ui --backend-store-uri sqlite:///mlflow.db
+
+Kalau Belum Ada: Buat mlflow.db Secara Manual
+Jalankan perintah MLflow dari direktori yang kamu inginkan
+taruh di lokasi ini :
+cd "C:\Users\acer\Documents\AI ML Bootcamp\MLOps\handson"
+mlflow ui --backend-store-uri sqlite:///mlflow.db
+

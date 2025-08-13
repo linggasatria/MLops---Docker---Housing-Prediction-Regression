@@ -1,0 +1,12 @@
+2025-08-14 00:13:15 | House Price Prediction | INFO | Loading configuration from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\config\config.yaml
+2025-08-14 00:13:15 | House Price Prediction | INFO | Configuration loaded successfully
+2025-08-14 00:13:17 | House Price Prediction | INFO | inisialisasi class
+2025-08-14 00:13:17 | House Price Prediction | INFO | Initialized DataLoader with path: C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:13:17 | House Price Prediction | INFO | Initialized DataProcessor
+2025-08-14 00:13:17 | House Price Prediction | INFO | Star Download dataset
+2025-08-14 00:13:17 | House Price Prediction | INFO | Loading data from C:\Users\userrr\OneDrive\Documents\BOOTCAMP AIML 6\Assignment\Day 39\MLops\artifacts\train.csv
+2025-08-14 00:13:17 | House Price Prediction | INFO | Data loaded successfully with shape (1460, 81)
+2025-08-14 00:13:17 | House Price Prediction | INFO | Data loaded
+2025-08-14 00:13:17 | House Price Prediction | INFO | Start processing
+2025-08-14 00:13:17 | House Price Prediction | INFO | Starting fit_transform process
+2025-08-14 00:13:17 | House Price Prediction | INFO | Fit_transform completed successfully
