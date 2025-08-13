@@ -1,162 +1,117 @@
-# Telco Customer Churn Prediction
+# House Price Prediction
 
-This project implements an end-to-end machine learning pipeline for predicting customer churn in a telecommunications company. It includes data processing, model training, MLflow tracking, and model serving via FastAPI.
+This project implements an end-to-end machine learning pipeline for predicting house prices using a Docker-based workflow. The pipeline includes data processing, model training, and MLflow experiment tracking.
 
 ## Project Structure
 ```
-telco_churn_prediction/
+house_price_prediction/
 ├── src/
-│   ├── data/
-│   │   ├── __init__.py
-│   │   ├── data_loader.py      # Data loading utilities
-│   │   └── data_processor.py   # Data preprocessing pipeline
-│   ├── models/
-│   │   ├── __init__.py
-│   │   ├── model.py           # Model architecture definitions
-│   │   └── trainer.py         # Training logic
-│   ├── utils/
-│   │   ├── __init__.py
-│   │   ├── logger.py          # Logging configuration
-│   │   └── config.py          # Configuration management
-│   └── api/
-│       ├── __init__.py
-│       ├── main.py            # FastAPI application
-│       └── schemas.py         # Pydantic models
+│   ├── data/
+│   │   ├── __init__.py
+│   │   ├── data_loader.py      # Utilities untuk memuat data
+│   │   └── data_processor.py   # Pipeline pra-pemrosesan data
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── model.py           # Definisi arsitektur model
+│   │   └── trainer.py         # Logika pelatihan model
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── logger.py          # Konfigurasi logging
+│   │   └── config.py          # Manajemen konfigurasi
 ├── tests/
-│   ├── __init__.py
-│   ├── test_data_loader.py
-│   └── test_model.py
+│   ├── __init__.py
+│   ├── test_data_loader.py
+│   └── test_model.py
 ├── notebooks/
-│   └── exploration.ipynb
+│   └── exploration.ipynb
 ├── config/
-│   └── config.yaml
+│   └── config.yaml
 ├── requirements.txt
+├── Dockerfile
 └── README.md
 ```
 
 ## Features
 
-- Data preprocessing pipeline with scikit-learn
-- Multiple tree-based models (Decision Tree, Random Forest, Gradient Boosting)
-- MLflow experiment tracking and model registry
-- Model serving via FastAPI
-- Comprehensive logging system
-- Configuration management
-- Production-ready code structure
+- Pipeline pra-pemrosesan data dengan scikit-learn
+- Beberapa model regresi (Linear Regression, Random Forest Regressor, Gradient Boosting Regressor)
+- Pelacakan eksperimen dan model registry MLflow
+- Eksekusi pipeline menggunakan Docker
+- Sistem logging yang komprehensif
+- Manajemen konfigurasi
+- Struktur kode yang siap produksi
 
 ## Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/telco_churn_prediction.git
-cd telco_churn_prediction
+git clone https://github.com/yourusername/house_price_prediction.git
+cd house_price_prediction
 ```
 
-2. Create and activate a virtual environment:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+2. Pastikan Docker sudah terinstal dan berjalan di sistem Anda.
 
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-## Configuration
-
-Update `config/config.yaml` with your settings:
-```yaml
 # Data Configuration
-data_path: "data/TelcoCustomerChurn.csv"
+data_path: "data/train.csv"
+target_column: "SalePrice"
 preprocessing_path: "models/preprocessing"
 
 # MLflow Configuration
 mlflow:
-  tracking_uri: "sqlite:///mlflow.db"
-  experiment_name: "telco_churn_production"
+  tracking_uri: "sqlite:///mlflow.db"
+  experiment_name: "house_price_prediction"
 
 # Model Parameters
 model_params:
-  random_forest:
-    n_estimators: 100
-    max_depth: 10
-    random_state: 42
-```
+  random_forest:
+    n_estimators: 100
+    max_depth: 10
+    random_state: 42
+
 
 ## Usage
+  Letakkan file data Anda (train.csv) di direktori data:
+- cp path/to/your/train.csv data/
 
-### Running the Pipeline
+  Bangun (build) Docker image dari Dockerfile yang ada di root direktori proyek.
+- docker build -t house-price-pipeline .
 
-1. Place your data file in the data directory:
-```bash
-cp path/to/your/TelcoCustomerChurn.csv data/
-```
+  Jalankan pipeline pelatihan di dalam container Docker. Ini akan menjalankan
+- docker run --rm -v $(pwd):/app house-price-pipeline
 
-2. Run the training pipeline:
-```bash
-python src/run_pipeline.py
-```
+  Setelah pipeline selesai berjalan, file mlflow.db dan artefak model akan tersimpan di direktori lokal Anda.
 
-3. View experiments in MLflow:
-```bash
-mlflow ui --backend-store-uri sqlite:///mlflow.db
-```
-
-### Starting the API
-
-1. Start the FastAPI server:
-```bash
-uvicorn src.api.main:app --reload
-```
-
-2. Access the API documentation:
-```
-http://localhost:8000/docs
-```
-
-## API Endpoints
-
-- `POST /predict`: Make churn predictions
-- `GET /health`: Health check endpoint
-- `GET /model-info`: Get current model information
+  Lihat eksperimen di MLflow:
+  mlflow ui --backend-store-uri sqlite:///mlflow.db
 
 ## Model Training
+Pipeline ini melatih tiga jenis model:
+- Linear Regression
+- Random Forest Regressor
+- Gradient Boosting Regressor
 
-The pipeline trains three types of models:
-- Decision Tree
-- Random Forest
-- Gradient Boosting
-
-The best model is selected based on a combination of recall and F1 score, and is automatically registered in MLflow for production use.
+Model terbaik dipilih berdasarkan nilai RMSE terendah dan secara otomatis didaftarkan di MLflow untuk penggunaan produksi.
 
 ## Monitoring
-
-- Logs are stored in the `logs/` directory
-- MLflow tracking information is stored in `mlflow.db`
-- Model artifacts are stored in `models/`
+- Log disimpan di direktori logs/
+- Informasi pelacakan MLflow disimpan di mlflow.db
+- Artefak model disimpan di models/
 
 ## Development
+  Running Tests
+  pytest tests/
 
-### Running Tests
-```bash
-pytest tests/
-```
+## Adding New Models
+- Perbarui src/models/model.py dengan konfigurasi model baru Anda
+- Tambahkan parameter spesifik model di config.yaml
+- Perbarui pipeline pelatihan jika diperlukan
 
-### Adding New Models
-
-1. Update `src/models/model.py` with your new model configuration
-2. Add model-specific parameters in `config.yaml`
-3. Update the training pipeline if necessary
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
+Co## ntributing
+- Fork the repository
+- Buat feature branch
+- Commit perubahan Anda
+- Push ke branch
+- Buat Pull Request
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
