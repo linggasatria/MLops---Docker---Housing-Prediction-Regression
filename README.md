@@ -106,7 +106,7 @@ Model terbaik dipilih berdasarkan nilai RMSE terendah dan secara otomatis didaft
 - Tambahkan parameter spesifik model di config.yaml
 - Perbarui pipeline pelatihan jika diperlukan
 
-Co## ntributing
+## Contributing
 - Fork the repository
 - Buat feature branch
 - Commit perubahan Anda
